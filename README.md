@@ -1,3 +1,1 @@
-# pythonCrawlerEksamen
-# pythonCrawler
 # pythonEksamen

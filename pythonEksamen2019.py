@@ -1,7 +1,7 @@
 import pythonCrawler
 
 def main():   
-  #pythonCrawler.getLinks()
+  pythonCrawler.getLinks()
   pythonCrawler.crawlLinks()
 
 if __name__ == "__main__":

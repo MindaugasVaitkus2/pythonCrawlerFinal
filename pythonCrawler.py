@@ -38,15 +38,15 @@ def getLinks():
     file.close()
 
 #Creates a file for each link found in  'linksToScrape'
-#Check each line for a relevant tag then replaces it with markdown.
 def crawlLinks():
   file = open('linksToScrape.md', 'r')
 
   for link in file:
-    fileName = link[31:-1]
+    fileName = link[31:-1]+'.md'
     file = open('%s' % fileName,'w')
     html = requestHTML(link)
 
+    #Replace the html with markdown
     for e in html:
       if h1Tag in e:
         string = e[e.find(h1Tag) + len(h1Tag) : e.find(h1Tag_E)] + new_Line
@@ -65,7 +65,6 @@ def crawlLinks():
         file.write('- ' + string)
   
       if pTag in e:
-    
         if aTag in e:
           linkDescription = e[e.find(href_E) + len(href_E) : e.find(aTag_E)]
           link = e[e.find(href) + len(href) : e.find(href_E)]
@@ -80,7 +79,6 @@ def crawlLinks():
           file.write('> ' + string)
       
       if preTag in e:       
-        print('found'+ e )    
-        string += e[e.find(preTag) + len(preTag_E) : e.find(preTag_E)] + new_Line
+        string = e[e.find(preTag) + len(preTag_E) : e.find(preTag_E)] + new_Line
         file.write(string)
 
