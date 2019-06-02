@@ -14,6 +14,7 @@ liTag, liTag_E = '<li>', '</li>'
 src, jpg = 'src="', '.jp'
 new_Line = ' \n'
 href, href_E = 'href="', '">'
+page_Name = 'https://clbokea.github.io/exam/'
 
 #Returns a page that has been split on linebreaks.
 def requestHTML(link):
@@ -24,7 +25,6 @@ def requestHTML(link):
 
 #Extract links from the HTML returned from our 'requestHTML' method.
 def getLinks():
-    page_Name = 'https://clbokea.github.io/exam/'
     html = requestHTML(page_Name)
     file = open('linksToScrape.md', 'a')
 
@@ -54,7 +54,7 @@ def crawlLinks():
 
       if jpg in e:      
         string = e[e.find(src) + len(src) : e.find(jpg)]
-        file.write('![alt text](' + string + ' "picture") ' + new_Line)
+        file.write('![alt text]('+ page_Name + string + '.jpeg' +  ' "picture") +' + new_Line)
 
       if h2Tag in e:                 
         string = e[e.find(h2Tag) + len(h2Tag) : e.find(h2Tag_E)] + new_Line
