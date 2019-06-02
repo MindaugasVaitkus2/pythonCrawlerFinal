@@ -1,7 +1,10 @@
-# pythonEksamen
-# pythonExam
-# pythonExam
-# pythonExam
-# pythonExam
-# pythonExam
-# pythonExam
+# Python Exam
+
+## Assignment 1
+
+To run the program:
+- Vavigate to the project folder
+- Run the *'pythonEksamen2019.py'* with the following command: *python pythonEksamen2019.py*
+
+
+
