@@ -54,7 +54,7 @@ def crawlLinks():
 
       if jpg in e:      
         string = e[e.find(src) + len(src) : e.find(jpg)]
-        file.write('![alt text]('+ page_Name + string + '.jpeg' +  ' "picture") +' + new_Line)
+        file.write('![alt text]('+ page_Name + string + '.jpeg' +  ' "picture")' + new_Line)
 
       if h2Tag in e:                 
         string = e[e.find(h2Tag) + len(h2Tag) : e.find(h2Tag_E)] + new_Line
