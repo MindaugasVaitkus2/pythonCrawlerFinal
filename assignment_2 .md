@@ -1,5 +1,5 @@
 # Blackjack 
-![alt text](https://clbokea.github.io/exam/src/how-do-you-play-blackjack.jpeg "picture") + 
+![alt text](https://clbokea.github.io/exam/src/how-do-you-play-blackjack.jpeg "picture") 
 > The rules of the game can be found here: [Black Jack Rules](https://en.wikipedia.org/wiki/Blackjack "Black Jack Rules") </a> 
 ## Further requirements 
 - The game should be terminal based (text based), so no gui should be implemented. 
