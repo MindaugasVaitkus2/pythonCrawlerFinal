@@ -7,7 +7,7 @@ It crawls and scrabes: https://clbokea.github.io/exam/index.html
 
 *To run the program*
 
-- Vavigate to the project folder.
+- Navigate to the project folder.
 - Run the *'pythonEksamen2019.py'* with the following command: *python pythonEksamen2019.py*.
 
 
