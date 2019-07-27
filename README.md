@@ -1,7 +1,7 @@
 # Python Exam
 
 This project is made by Phillip Eismark for a Python exam.
-It crawls and scrabes: https://clbokea.github.io/exam/index.html
+It crawls and scrapes https://clbokea.github.io/exam/index.html making a file for each link found and saving the site in markdown format
 
 ## Assignment 1
 
